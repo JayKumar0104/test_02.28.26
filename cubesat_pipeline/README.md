@@ -1,12 +1,12 @@
-MIT BWSI CubeSat Lunar Terrain Mapping Pipeline
+# MIT BWSI CubeSat Lunar Terrain Mapping Pipeline
 
 Competition-ready terrain analysis pipeline for the MIT BWSI Build a CubeSat Challenge.
 
-Setup
+## Setup
 
 pip install -r requirements.txt
 
-Run
+## Run
 
 python main.py --config config.yaml
 
@@ -18,6 +18,6 @@ Key outputs:
 - traversability_heatmap.png
 - shadow_coverage.png
 - results.json
-- downlink_bundle_<runid>.zip
+- downlink_<runid>.zip
 
 IMU file (data/imu.csv) is optional.

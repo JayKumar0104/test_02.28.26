@@ -9,11 +9,6 @@ output:
 
 runtime:
   max_processing_s: 60.0
-  degrade:
-    enable: true
-    resize_width: 640
-    max_frames: 12
-    skip_debug: true
 
 mission:
   solar_elevation_deg: 35.0

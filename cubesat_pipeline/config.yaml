@@ -1,1 +1,47 @@
+input:
+  image_dir: "data/images"
+  imu_csv: "data/imu.csv"
 
+output:
+  out_dir: "out"
+  save_debug: true
+  make_zip: true
+
+runtime:
+  max_processing_s: 60.0
+  degrade:
+    enable: true
+    resize_width: 640
+    max_frames: 12
+    skip_debug: true
+
+mission:
+  solar_elevation_deg: 35.0
+  solar_azimuth_deg: 90.0
+
+scene:
+  scene_width_m: 1.2
+
+preprocess:
+  resize_width: 960
+  clahe_clip: 3.0
+  clahe_grid: [8, 8]
+  blur_ksize: 5
+
+shadow:
+  value_percentile: 12
+  morph_kernel: 5
+
+hazards:
+  min_area_px: 80
+  max_area_px: 8000
+  min_circularity: 0.25
+  canny_sigma: 0.35
+
+traversability:
+  grid_cell_m: 0.05
+  grid_w_m: 1.2
+  grid_h_m: 0.8
+  w_hazard: 1.0
+  w_shadow: 0.7
+  w_slope: 0.6

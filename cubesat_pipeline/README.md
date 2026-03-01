@@ -1,12 +1,12 @@
-# MIT BWSI CubeSat Lunar Terrain Mapping Pipeline
+MIT BWSI CubeSat Lunar Terrain Mapping Pipeline
 
 Competition-ready terrain analysis pipeline for the MIT BWSI Build a CubeSat Challenge.
 
-## Setup
+Setup
 
 pip install -r requirements.txt
 
-## Run
+Run
 
 python main.py --config config.yaml
 
